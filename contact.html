@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>
+        Contact Us Page
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+        <div class="navbar wrapper">
+            <img src="images/logo.svg" alt="logo of lumbini">
+
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- contact us box -->
+
+    <div class="contact-content">
+
+        <h1>Contact US</h1>
+        <p>If you want to know more about lumbini please feel free to contact us . </p>
+
+    </div>
+
+
+    <div id="contact-box">
+        <form method="post" class="contact-form" action="#">
+            <div class="box-item">
+                <label for="fn">Your Name*</label><br>
+                <input type="text" id="fn" placeholder="John Doo" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email d*</label><br>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="message">Subject</label><br>
+                <input type="text" id="message" placeholder="Enter Subject Here" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="country">Country </label>
+                <br>
+                <select id="country">
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Nepal">Nepal</option>
+                </select>
+            </div>
+            <br>
+
+
+            <div>
+                <label for="message"></label>
+                Your Message*<br>
+                <textarea height=100 width="20"></textarea>
+            </div>
+            <br>
+
+
+            <div>
+                <input type="checkbox" name="termandcondition" id="termsandcondition">
+                <label for="termandcondition">By submitting this form you agree to our terms and conditions </label>
+            </div>
+
+            <br>
+            <button type="submit">
+                Submit
+            </button>
+
+    </div>
+
+
+    </form>
+</body>
+
+</html>
