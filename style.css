@@ -250,10 +250,10 @@ select {
     padding: 40px 30px;
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 1px solid darkblue;
+    border: 1px solid gray;
     border-radius: 10px;
     background: white;
-    box-shadow: rgb(122, 122, 148) 1px 1px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .box-item {
