@@ -203,9 +203,17 @@
     text-decoration: none;
     color: var(--textcolor);
     list-style: none;
+    border-radius: 4px;
     padding: 16px 24px;
     border: solid 1px rgb(219, 216, 216);
 }
+
+.weblink-bottons>a:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: ease-in-out;
+}
+
+
 
 .reading-links {
     display: flex;
@@ -265,4 +273,46 @@ button {
     color: white;
     background-color: darkblue;
     border-radius: 4px;
+}
+
+
+/* footer css */
+
+.footer {
+    color: white;
+    padding: 60px;
+    margin-top: 32px;
+    background-color: #2a2929;
+}
+
+.footer_inside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_description {
+    max-width: 40ch;
+    margin-top: 16px;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 16px;
+
+}
+
+.team_member>a {
+    color: white;
+    text-decoration: none;
+}
+
+.poweredby {
+    margin-bottom: 16px;
 }
