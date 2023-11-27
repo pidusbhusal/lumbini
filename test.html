@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GSAP Example</title>
+    
+    
+</head>
+
+<body>
+
+    <!-- An element to animate -->
+    <div class="box"></div>
+
+    <script>
+        // Select the HTML element to animate
+        const box = document.querySelector('.box');
+
+        // Animate the element using GSAP
+        gsap.to(box, {
+            x: 200, // Move the element 200 pixels to the right
+            opacity: 0.5, // Set opacity to 0.5
+            scale: 1.5, // Scale the element to 1.5 times its size
+            duration: 1 // Animation duration
+        });
+    </script>
+
+</body>
+
+</html>

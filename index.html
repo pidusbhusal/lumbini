@@ -3,28 +3,38 @@
 <head>
     <title> Project for Ashok, Sudip, Manoj and Sujit</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <!-- importing fonts -->
     <link
         href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,2,601,600,401,501,400,700&display=swap"
         rel="stylesheet">
+
+
+    <!-- GSAP library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- scrollTrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
 </head>
 
 <body>
 
     <!-- navbar -->
-<div class="navbar-wrapper">
-    <div class="navbar wrapper">
-        <a href="index.html"><img src="images/logo.svg" alt="logo of lumbini"></a>
+    <nav class="navbar-wrapper">
+
+        <div class="navbar wrapper">
+            <a href="index.html"><img src="images/logo.svg" alt="logo of lumbini"></a>
 
 
-        <ul class="main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</div>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- herosection -->
     <div class="herosection-wrapper">
@@ -32,7 +42,7 @@
         <div class="gredient"></div>
         <div class=" wrapper">
             <div class="herosection">
-                <h1>Discover Serenity at Lumbini</h1>
+                <h1 id="herotitle">Discover Serenity at Lumbini</h1>
                 <p class="herocopy">
                     Where Tranquility Meets Timeless Beauty.
                 </p>
@@ -44,10 +54,12 @@
     </div>
 
 
+
+
     <!-- Intro section -->
-    <div class="about">
+    <section class="about">
         <img src="./images/quote.svg" alt="">
-        <h2>
+        <h2 class="subherotitle">
             The birthplace of Gautam Bhuddha
         </h2>
         <p class="aboutorigin">
@@ -55,7 +67,7 @@
             her way home,gave birth under a sal tree, surprised by the early arrival. The full moon illuminated this
             momentous event,marking thebeginning of Buddhism in a place now known as Lumbini.
         </p>
-    </div>
+    </section>
 
 
     <!-- section with side -->
@@ -63,7 +75,7 @@
     <div class="section">
 
         <!-- reason section -->
-        <div class="reason">
+        <aside class="reason">
             <div class="reason-wrapper">
                 <h3 class="section-heading">
                     Reason to visit lumbini
@@ -91,10 +103,10 @@
                 </ul>
             </div>
 
-        </div>
+        </aside>
 
         <!-- sidebar section -->
-        <div class="sidebar">
+        <aside class="sidebar">
             <div class="sidebar-wrapper">
                 <h3 class="section-heading">Like what you see ?</h3>
                 <p>If you liked what you saw in this website you can learn to design such website trough these linkgs
@@ -109,13 +121,15 @@
                 </ul>
             </div>
 
-        </div>
-
+        </aside>
 
     </div>
+
+    <div class="box">this is bos</div>
+
     <!-- footer -->
 
-    <div class="footer">
+    <footer class="footer">
         <div class="wrapper">
             <div class="footer_inside">
                 <div class="footer_details">
@@ -152,8 +166,21 @@
 
         </div>
 
-    </div>
+    </footer>
 
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".box", {
+            scrollTrigger: ".box", // start animation when ".box" enters the viewport
+            x: 500,
+        });
+    </script>
 </body>
+
+
+
 
 </html>
