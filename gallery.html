@@ -21,11 +21,11 @@
             padding-bottom: 50px;
         }
 
-        h3 {
-            font-size: 3em;
-            font-weight: bold;
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
             border-bottom: 3px solid;
-            padding-bottom: 10px;
+            margin-bottom: 50px;
         }
 
         span {
@@ -33,25 +33,19 @@
         }
 
         .box {
+            padding: 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
         }
 
-        .container>.box>.dream {
-            display: flex;
-            flex-direction: row;
-            width: 50%;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-self: center;
-            gap: 10px;
-        }
 
-        .container .box .dream img {
+
+
+        img {
             width: 300px;
-            padding-bottom: 15px;
+            object-fit: cover;
             border-radius: 5px;
         }
     </style>
@@ -63,11 +57,11 @@
 
     <!-- navbar -->
     <nav class="navbar-outer">
-    
+
         <div class="navbar wrapper">
             <a href="index.html"><img src="images/logo.svg" alt="logo of lumbini"></a>
-    
-    
+
+
             <ul class="main-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -80,22 +74,45 @@
 
     <!-- gallery -->
     <div class="container">
-        <div class="heading">
-            <h3>Photo <span>Gallery</span></h3>
-        </div>
-        <div class="box">
-            <div class="dream">
-                <img src="./images/img1.jpg">
-                <img src="./images/img2.jpg">
-                <img src="./images/img3.jpg">
-                <img src="./images/img4.jpg">
-                <img src="./images/img5.jpg">
-                <img src="./images/img6.jpg">
-                <img src="./images/img7.jpg">
-                <img src="./images/img8.jpg">
 
+        <div class="section">
+            <div class="box">
+                <h1>Image Gallery</h1>
+                <table border="1" cellpadding="20">
+                    <tr>
+                        <td><img src="./images/img1.jpg" alt="image of lumbini" width="300" height="300"></td>
+                        <td><img src="./images/img2.jpg" alt="image of lumbini" width="300" height="300"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/img3.jpg" alt="image of lumbini" width="300" height="300"></td>
+                        <td><img src="./images/img4.jpg" alt="image of lumbini" width="300" height="300"></td>
+                    </tr>
+
+                </table>
             </div>
+            <aside class="sidebar gallery-sidebar">
+                <div class="sidebar-wrapper">
+                    <h3 class="section-heading">Like what you see ?</h3>
+                    <p>If you liked what you saw in this website you can learn to design such website trough these
+                        linkgs
+                    </p>
+                    <ul class="reading-links">
+                        <li class="weblink-bottons"><a href="https://www.codecademy.com/learn/learn-html"
+                                target="_blank">Code
+                                Academy</a>
+                        </li>
+                        <li class="weblink-bottons"><a href="https://www.w3schools.com/html/" target="_blank">W3
+                                School</a>
+                        </li>
+                        <li class="weblink-bottons"><a href="https://web.dev/learn/html" target="_blank">Web Dev</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+
         </div>
+
     </div>
 
 

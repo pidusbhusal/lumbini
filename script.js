@@ -1,9 +1,28 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".about", {
-  opacity: 0,
+  scrollTrigger: {
+    trigger: ".section",
+    start: "top 100%",
+    end: "bottom 10%",
+    toggleActions: "play none none none",
+    markers: false,
+  },
   y: 100,
-  duration: 1.2,
+  opacity: 0,
+});
+
+gsap.to(".about", {
+  scrollTrigger: {
+    trigger: ".section",
+    start: "top 100%",
+    end: "bottom 10%",
+    toggleActions: "play none none none",
+    markers: false,
+  },
+  y: 0,
+  opacity: 1,
+  duration: 1.1,
   ease: "power2.out",
 });
 
@@ -15,6 +34,14 @@ gsap.from(".navbar-outer", {
 gsap.from(".herosection-wrapper", {
   y: 70,
   opacity: 0,
+  duration: 1.1,
+  ease: "power2.out",
+});
+
+gsap.from(".herosection", {
+  y: 70,
+  opacity: 0,
+  delay: 0.5,
   duration: 1.1,
   ease: "power2.out",
 });
@@ -88,5 +115,4 @@ gsap.from(".contact-form", {
   ease: "power2.out",
 });
 
-
-// 
+//

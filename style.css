@@ -18,7 +18,11 @@
 
 .navbar-outer {
     padding: 2rem 40px;
-
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: gray 1px 1px;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -315,4 +319,9 @@ h5 {
 
 .poweredby {
     margin-bottom: 16px;
+}
+
+.gallery-sidebar {
+    text-align: left;
+    background-color: rgb(245, 243, 243);
 }
