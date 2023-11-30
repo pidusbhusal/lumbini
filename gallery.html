@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <!-- importing gsap and scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+
+
+
+
     <style>
         .container {
             display: flex;
@@ -43,7 +52,7 @@
 
 
 
-        img {
+        .location-image {
             width: 300px;
             object-fit: cover;
             border-radius: 5px;
@@ -80,12 +89,16 @@
                 <h1>Image Gallery</h1>
                 <table border="1" cellpadding="20">
                     <tr>
-                        <td><img src="./images/img1.jpg" alt="image of lumbini" width="300" height="300"></td>
-                        <td><img src="./images/img2.jpg" alt="image of lumbini" width="300" height="300"></td>
+                        <td><img class="location-image" src="./images/img1.jpg" alt="image of lumbini" width="300"
+                                height="300"></td>
+                        <td><img class="location-image" src="./images/img2.jpg" alt="image of lumbini" width="300"
+                                height="300"></td>
                     </tr>
                     <tr>
-                        <td><img src="./images/img3.jpg" alt="image of lumbini" width="300" height="300"></td>
-                        <td><img src="./images/img4.jpg" alt="image of lumbini" width="300" height="300"></td>
+                        <td><img class="location-image" src="./images/img3.jpg" alt="image of lumbini" width="300"
+                                height="300"></td>
+                        <td><img class="location-image" src="./images/img4.jpg" alt="image of lumbini" width="300"
+                                height="300"></td>
                     </tr>
 
                 </table>
@@ -158,5 +171,8 @@
     </div>
 
 </body>
+
+
+<script src="script.js"></script>
 
 </html>

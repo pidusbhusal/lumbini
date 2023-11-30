@@ -143,3 +143,13 @@ gsap.to(".member-card", {
   duration: 1.1,
   ease: "power2.out",
 });
+
+
+
+
+gsap.from(".box", {
+  y: 100,
+  opacity: 0,
+  duration: 1.1,
+  ease: "power2.out",
+});
