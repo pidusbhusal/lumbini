@@ -325,3 +325,66 @@ h5 {
     text-align: left;
     background-color: rgb(245, 243, 243);
 }
+
+
+
+/* our team section  */
+
+
+.our-team {
+    padding-bottom: 48px;
+}
+
+.team-title {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.member-card {
+    width: fit-content;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+    border: solid 1px black;
+}
+
+.team-name {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.student-id {
+    font-size: 14px;
+    color: darkslategray;
+}
+
+
+
+.email-botton {
+    margin-top: 8px;
+    color: white;
+    background-color: darkblue;
+    text-decoration: none;
+    border: none;
+}
+
+
+
+.emaillink {
+    color: white;
+    text-decoration: none;
+}
+
+.team-card-collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+}
+
+.teamimage {
+    border-radius: 4px;
+    object-fit: cover;
+}

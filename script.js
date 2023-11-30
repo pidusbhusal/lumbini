@@ -116,3 +116,30 @@ gsap.from(".contact-form", {
 });
 
 //
+
+// image card animation
+gsap.from(".member-card", {
+  scrollTrigger: {
+    trigger: ".member-card",
+    start: "top 80%",
+    end: "bottom 20%",
+    toggleActions: "play none none none",
+    markers: false,
+  },
+  y: 100,
+  opacity: 0,
+});
+gsap.to(".member-card", {
+  scrollTrigger: {
+    trigger: ".member-card",
+    start: "top 90%",
+    end: "bottom 20%",
+    toggleActions: "play none none none",
+    markers: false,
+  },
+  y: 0,
+  delay: 0.1,
+  opacity: 1,
+  duration: 1.1,
+  ease: "power2.out",
+});
