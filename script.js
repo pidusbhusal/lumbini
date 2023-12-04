@@ -16,7 +16,7 @@ gsap.to(".about", {
     end: "bottom 0%",
     trigger: ".section",
     toggleActions: "play none none none",
-    markers: true,
+    markers: false,
   },
   y: 0,
   opacity: 1,
