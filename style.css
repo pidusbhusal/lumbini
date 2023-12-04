@@ -294,6 +294,17 @@ button {
     justify-content: space-between;
 }
 
+.schoollink {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/*  */
+
 .project_description {
     max-width: 40ch;
     margin-top: 16px;
