@@ -3,8 +3,6 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".about", {
   scrollTrigger: {
     trigger: ".section",
-    start: "top 100%",
-    end: "bottom 10%",
     toggleActions: "play none none none",
     markers: false,
   },
@@ -14,11 +12,11 @@ gsap.from(".about", {
 
 gsap.to(".about", {
   scrollTrigger: {
+    start: "top 130%",
+    end: "bottom 0%",
     trigger: ".section",
-    start: "top 100%",
-    end: "bottom 10%",
     toggleActions: "play none none none",
-    markers: false,
+    markers: true,
   },
   y: 0,
   opacity: 1,
@@ -143,9 +141,6 @@ gsap.to(".member-card", {
   duration: 1.1,
   ease: "power2.out",
 });
-
-
-
 
 gsap.from(".box", {
   y: 100,
